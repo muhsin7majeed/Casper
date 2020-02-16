@@ -26,8 +26,8 @@
         <script>
             // Sets darkmode on initial load based on localstorage value
             document.addEventListener("DOMContentLoaded", () => {
-                var darkMode = JSON.parse(localStorage.getItem('darkmode'))
-                var element = document.body;
+                let darkMode = JSON.parse(localStorage.getItem('darkmode'))
+                let element = document.body;
 
                 if (darkMode) {
                     element.classList.add("dark-mode")
@@ -38,9 +38,9 @@
 
             // Sets darkmode on btn click from site-nav.hbs
             const setDarkMode = () => {
-                let darkMode = JSON.parse(localStorage.getItem('darkmode'))
+                let darkModes = JSON.parse(localStorage.getItem('darkmode'))
                 var element = document.body;
-                localStorage.setItem("darkmode", !darkMode)
+                localStorage.setItem("darkmode", !darkModes)
                 let newDarkMode = JSON.parse(localStorage.getItem('darkmode'))
                 if (newDarkMode) {
                     element.classList.add("dark-mode")
