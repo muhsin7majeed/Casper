@@ -2825,7 +2825,7 @@ Usage (In Ghost editor):
 
 /* 12. Dark Mode
 /* ---------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     color: rgba(255, 255, 255, 0.75);
     background: var(--darkmode);
@@ -3053,7 +3053,7 @@ Usage (In Ghost editor):
   .subscribe-form .success .message-success {
     color: color(var(--green) l(+5%) s(-5%));
   }
-}
+} */
 
 .dark-mode-toggler {
   background-color: transparent;
@@ -3085,7 +3085,7 @@ DARK MODE
 /* .dark-mode { */
 
 .dark-mode .dark-mode-toggler {
-  background-image: url("../../partials/icons/sun-solid.svg");
+  background-image: url("../../partials/icons/sun-solid.svg") !important;
 }
 
 .dark-mode {
