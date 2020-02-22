@@ -21,7 +21,7 @@
     <div class="site-nav-right">
 
         {{!-- Dark Mode Btn --}}
-        <button class="dark-mode-toggler" onclick="setDarkMode()"></button>
+        <button class="dark-mode-toggler social-link" onclick="setDarkMode()"></button>
 
         <script>
             // Sets darkmode on initial load based on localstorage value
@@ -37,9 +37,9 @@
             });
 
             // Sets darkmode on btn click from site-nav.hbs
-            const setDarkMode = () => {
+            var setDarkMode = () => {
                 let darkModes = JSON.parse(localStorage.getItem('darkmode'))
-                var element = document.body;
+                let element = document.body;
                 localStorage.setItem("darkmode", !darkModes)
                 let newDarkMode = JSON.parse(localStorage.getItem('darkmode'))
                 if (newDarkMode) {

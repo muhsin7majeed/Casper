@@ -483,6 +483,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link {
+    color: #fff;
     display: inline-block;
     margin: 0;
     padding: 10px;
@@ -3059,22 +3060,14 @@ Usage (In Ghost editor):
     background-color: transparent;
     position: relative;
     outline: none;
+    background-repeat: no-repeat;
+    margin-top: 2px;
     margin-right: 10px;
-    padding: 10px;
+    padding: 8px;
     opacity: 0.8;
     transition: background-image 0.3s linear;
-    background-image: url("../../partials/icons/moon-solid.svg");
+    background-image: url("../../partials/icons/moon.svg");
 }
-
-/* .dark-mode-toggler::after {
-  position: absolute;
-  content: "Enable Dark Mode";
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: red;
-} */
 
 /* 
 ########################
@@ -3085,7 +3078,8 @@ DARK MODE
 /* .dark-mode { */
 
 .dark-mode .dark-mode-toggler {
-    background-image: url("../../partials/icons/sun-solid.svg") !important;
+    background-image: url("../../partials/icons/sun.svg") !important;
+    padding: 10px;
 }
 
 .dark-mode {
